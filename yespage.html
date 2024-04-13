@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSGOOO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: linear-gradient(hsl(210, 100%, 80%), hsl(0, 0%, 100%)); height: 100vh; overflow: hidden;">
+    <div class="imagecontainer">
+        <img src="carcelebrate.gif" width="300px" height="260px" style="margin: 10px;">
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px; text-align: center;">SEE YOU SOON POOKIE <3</h2>
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px; text-align: center; margin-top: -15px;">RIZZED YOU UP FR</h2>
+        <img src="carglasses.jpg"  widht="200px" height="260px" style="margin: 10px;">
+    </div>
+    <button id="Home">
+        <a href="index.html" style="font-style: italic; font-weight: bold;">Home</a>
+    </button>
+    <audio id="song" autoplay loop>
+        <source src="carelesswhisper.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="mute2">
+        <button onclick="mute();">
+           <img src="mute.png" style="height: 25px; width: 25px; margin-top: 2px;">
+        </button>
+    </div>
+
+    <script>
+        let audio = document.getElementById("song");
+        audio.volume = 0.03;
+
+        function mute() {
+            audio.muted = true;
+        }
+    </script>
+</body>
+</html>
